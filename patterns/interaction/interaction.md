@@ -1,4 +1,4 @@
 Interaction Components
 ====
 
-[Button](interaction/Button)
+[Button](Button)

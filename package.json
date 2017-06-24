@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "directory-named-webpack-plugin": "^2.1.0",
     "patternbook": "/Users/kk/Projects/patternbook",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.5.0"

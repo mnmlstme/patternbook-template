@@ -1,11 +1,12 @@
 var path = require('path')
 const webpack = require('webpack')
+const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
 
 module.exports = {
     entry: './book.js',
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /.jsx?$/,
                 exclude: /node_modules/,
@@ -39,7 +40,19 @@ module.exports = {
             TARGET: path.resolve(__dirname, 'patterns')
         },
         modules: ['node_modules'],
-        extensions: ['.js']
+        extensions: ['.js', '.md']
+        /*
+        mainFields: ['browser', 'module', 'main'],
+        mainFiles: ['index', 'README']
+        plugins: [
+            new DirectoryNamedWebpackPlugin({
+                honorPackage: ['browser', 'module', 'main'],
+                transformFn: function(dirName) {
+                    return dirName + '.md'
+                }
+            })
+        ]
+        */
     },
 
     resolveLoader: {
