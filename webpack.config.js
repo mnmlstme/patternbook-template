@@ -8,7 +8,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /.jsx?$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -16,6 +16,11 @@ module.exports = {
                         presets: ['react', 'es2015']
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: ['css-loader']
             },
             {
                 test: /\.md$/,

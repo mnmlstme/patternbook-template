@@ -1,16 +1,16 @@
 ---
-theme: '../Theme.jsx'
+theme: ../Theme.jsx
 
 imports:
-    Button: './Button.jsx'
+    Button: ./Button.jsx
 
 scope:
-    label: 'Hit me'
+    label: Hit me
     count: 0
 ---
 
 Button
-====
+----
 
 The button component creates buttons.
 
