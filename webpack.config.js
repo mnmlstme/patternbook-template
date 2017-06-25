@@ -23,6 +23,18 @@ module.exports = {
                 use: ['css-loader']
             },
             {
+                test: /\.svg$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'svg-inline-loader',
+                    query: {
+                        idPrefix: true,
+                        classPrefix: true,
+                        removingTagAttrs: ['xmlns', 'xmlns:xlink', 'version']
+                    }
+                }
+            },
+            {
                 test: /\.md$/,
                 exclude: /node_modules/,
                 use: [
