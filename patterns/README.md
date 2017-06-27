@@ -4,5 +4,5 @@ Sample Component Library
 Categories
 ====
 
-[Typography](typography/)
-[Interaction](interaction/)
+- [Typography](typography/)
+- [Interaction](interaction/)

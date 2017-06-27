@@ -57,19 +57,7 @@ module.exports = {
             TARGET: path.resolve(__dirname, 'patterns')
         },
         modules: ['node_modules'],
-        extensions: ['.js', '.md']
-        /*
-        mainFields: ['browser', 'module', 'main'],
-        mainFiles: ['index', 'README']
-        plugins: [
-            new DirectoryNamedWebpackPlugin({
-                honorPackage: ['browser', 'module', 'main'],
-                transformFn: function(dirName) {
-                    return dirName + '.md'
-                }
-            })
-        ]
-        */
+        extensions: ['.js']
     },
 
     resolveLoader: {

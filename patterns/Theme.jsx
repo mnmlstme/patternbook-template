@@ -1,7 +1,7 @@
 import React from 'react'
-import {StyleSheet, css} from 'aphrodite/no-important'
+import { StyleSheet, css } from 'aphrodite/no-important'
 
-function Theme (props) {
+function DefaultTheme(props) {
     return (
         <div className={css(classes.theme)}>
             {props.children}
@@ -15,4 +15,4 @@ const classes = StyleSheet.create({
     }
 })
 
-module.exports = Theme
+module.exports = DefaultTheme

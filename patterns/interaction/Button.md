@@ -1,6 +1,4 @@
 ---
-theme: ../Theme.jsx
-
 imports:
     Button: ./Button.jsx
 
