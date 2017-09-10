@@ -5,7 +5,7 @@
   "main": "book.js",
   "scripts": {
     "build": "webpack",
-    "start-patternbook": "webpack-dev-server --hot --progress --colors",
+    "start": "webpack-dev-server --hot --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
