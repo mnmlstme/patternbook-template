@@ -2,4 +2,4 @@ Typography
 ----
 
 
-- [Icon](Icon)
+- [Icon](/typography/Icon)

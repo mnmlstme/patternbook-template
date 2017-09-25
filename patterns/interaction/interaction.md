@@ -1,5 +1,5 @@
 Interaction Components
 ----
 
-- [links](link)
-- [Button component](Button)
+- [links](/interaction/link)
+- [Button component](/interaction/Button)

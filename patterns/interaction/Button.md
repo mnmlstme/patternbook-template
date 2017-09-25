@@ -5,24 +5,28 @@ imports:
 scope:
     label: Hit me
     count: 0
+
+messages:
+    SET: scope.Set
+    RESET: scope.Reset,
 ---
 
 Button
 ----
 
-The button component creates buttons.
-
-```render html
-<Button onClick={() => dispatch(RESET)}>
+```render html aside
+<Button onClick={() => dispatch( RESET() )}>
     Reset
 </Button>
 ```
 
-Buttons look like this:
+The button component creates buttons.
 
 ```show html
-<Button onClick={() => dispatch(SET, {count: count + 1})}>
+<Button onClick={() => dispatch( SET({count: count + 1}) )}>
     {label}
 </Button>
 <p>{count}</p>
 ```
+
+Buttons usually have an action set via the `onClick` property.
