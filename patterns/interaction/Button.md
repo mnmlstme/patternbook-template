@@ -14,7 +14,7 @@ messages:
 Button
 ----
 
-```render html aside
+```render jsx aside
 <Button onClick={() => dispatch( RESET() )}>
     Reset
 </Button>
@@ -22,7 +22,7 @@ Button
 
 The button component creates buttons.
 
-```show html
+```demo jsx aside
 <Button onClick={() => dispatch( SET({count: count + 1}) )}>
     {label}
 </Button>

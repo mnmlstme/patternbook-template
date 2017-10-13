@@ -1,5 +1,4 @@
 ---
-theme: ../Theme.jsx
 imports:
     Icon: ./Icon.jsx
 symbols:
@@ -20,30 +19,12 @@ into the page.
 They are referenced via the `<Icon>` component,
 which generates an SVG `<use>` element.
 
-```show html
+```demo jsx aside
 <Icon symbol="circle"/>
-```
-
-```show html
 <Icon symbol="opencircle"/>
-```
-
-```show html
 <Icon symbol="content"/>
-```
-
-```show html
 <Icon symbol="fontsize"/>
-```
-
-```show html
 <Icon symbol="pagesize"/>
-```
-
-```show html
 <Icon symbol="scale"/>
-```
-
-```show html
 <Icon symbol="fullscreen"/>
 ```
