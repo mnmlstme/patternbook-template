@@ -12,7 +12,7 @@ symbols:
 ---
 
 Icons
-----
+====
 
 Icons are produced as SVG and injected as `<symbol>`s
 into the page.

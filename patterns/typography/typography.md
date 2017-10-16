@@ -1,5 +1,4 @@
 Typography
-----
-
+====
 
 - [Icon](/typography/Icon)

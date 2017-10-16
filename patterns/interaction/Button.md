@@ -12,7 +12,7 @@ messages:
 ---
 
 Button
-----
+====
 
 ```render jsx aside
 <Button onClick={() => dispatch( RESET() )}>
