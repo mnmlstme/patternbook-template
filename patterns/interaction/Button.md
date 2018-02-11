@@ -7,23 +7,24 @@ scope:
     count: 0
 
 messages:
-    SET: scope.Set
-    RESET: scope.Reset,
+    Set: scope.Set
+    Reset: scope.Reset
 ---
 
-Button
-====
+# Button
 
-```render jsx aside
-<Button onClick={() => dispatch( RESET() )}>
+The button component creates buttons.
+
+```jsx render
+<Button onClick={() => dispatch(Reset())}>
     Reset
 </Button>
 ```
 
 The button component creates buttons.
 
-```demo jsx aside
-<Button onClick={() => dispatch( SET({count: count + 1}) )}>
+```jsx demo
+<Button onClick={() => dispatch(Set({count: count + 1}))}>
     {label}
 </Button>
 <p>{count}</p>

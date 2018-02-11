@@ -11,15 +11,14 @@ symbols:
     fullscreen: ./svg/fullscreen.svg
 ---
 
-Icons
-====
+# Icons
 
 Icons are produced as SVG and injected as `<symbol>`s
 into the page.
 They are referenced via the `<Icon>` component,
 which generates an SVG `<use>` element.
 
-```demo jsx aside
+```jsx demo aside
 <Icon symbol="circle"/>
 <Icon symbol="opencircle"/>
 <Icon symbol="content"/>
