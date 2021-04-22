@@ -1,9 +1,12 @@
 var path = require('path')
 const webpack = require('webpack')
-const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
 
 module.exports = {
-    entry: './book.js',
+    entry: {
+      book: './book.js'
+    },
+
+    mode: "development",
 
     module: {
         rules: [
@@ -13,7 +16,8 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     query: {
-                        presets: ['react', 'es2015', 'stage-0']
+                        presets: ['react', 'env'],
+                        plugins: ['syntax-dynamic-import']
                     }
                 }
             },
@@ -41,7 +45,7 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         query: {
-                            presets: ['react', 'es2015', 'stage-0']
+                            presets: ['react', 'env']
                         }
                     },
                     {
@@ -67,9 +71,9 @@ module.exports = {
     },
 
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
-        libraryTarget: 'umd'
+        filename: '[name].bundle.js',
+        chunkFilename: 'chunk.[id].js',
+        publicPath: '/'
     },
 
     plugins: [
